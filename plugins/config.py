@@ -17,6 +17,8 @@ class Config(object):
 
     API_HASH = os.environ.get("API_HASH")
 
+    STRING = os.environ.get("STRING")
+
     AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
 
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
