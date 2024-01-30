@@ -9,6 +9,7 @@ from plugins.config import Config
 
 from pyrogram import Client as Ntbot
 from pyrogram import filters
+from plugins.youtube_dl_button import app as Client2
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 
