@@ -23,4 +23,21 @@ if __name__ == "__main__" :
         api_id=Config.API_ID,
         api_hash=Config.API_HASH,
         plugins=plugins)
+
+  if STRING:
+    apps = [Client2, Ntbot]
+    for app in apps:
+      idle()
+      for app in apps:
+        app.stop()
+  else:
     Ntbot.run()
+
+
+#if STRING:
+    #apps = [Client2,bot]
+    #for app in apps:
+        #app.start()
+    #idle()
+    #for app in apps:
+        #app.stop()
