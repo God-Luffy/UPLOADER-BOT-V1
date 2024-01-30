@@ -26,6 +26,8 @@ from plugins.database.database import db
 from PIL import Image
 from functions.ran_text import random_char
 
+app = Client("test", api_id=API_ID, api_hash=API_HASH, session_string=STRING)
+
 async def youtube_dl_call_back(bot, update):
     cb_data = update.data
     # youtube_dl extractors
